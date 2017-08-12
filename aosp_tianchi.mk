@@ -30,7 +30,12 @@ PRODUCT_MANUFACTURER := Sony
 $(call inherit-product, device/sony/tianchi/device.mk)
 $(call inherit-product-if-exists, vendor/sony/tianchi/tianchi-vendor.mk)
 
-# Missing:
-#
-# Fingerprint for tianchi (from stock)
+# Fingerprint for flamingo (from stock)
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D5503
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/D5303/D5303:4.4.3/19.1.1.C.0.56/x393Zw:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="D5303-user 4.4.3 19.1.1.C.0.56 x393Zw release-keys"
+
 # Bootanimation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+
