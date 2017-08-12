@@ -51,10 +51,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.tianchi
 
-# NFC config
-PRODUCT_PACKAGES += \
-    nfc_nci.tianchi
-
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREBUILT_DPI := hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
@@ -65,4 +61,4 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/yukon/platform.mk)
-$(call inherit-product, vendor/sony/yukon-tianchi/tianchi-vendor.mk)
+$(call inherit-product, vendor/sony/tianchi/tianchi-vendor.mk)
