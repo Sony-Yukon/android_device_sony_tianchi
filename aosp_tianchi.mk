@@ -1,4 +1,4 @@
-# Copyright 2014 The Android Open Source Project
+# Copyright 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Kernel config
 TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
 
 # Inherit from those products. Most specific first.
@@ -19,8 +20,17 @@ $(call inherit-product, device/sony/tianchi/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := aosp_d5303
+# Product attributes
+PRODUCT_NAME := aosp_tianchi
 PRODUCT_DEVICE := tianchi
-PRODUCT_MODEL := Xperia T2 Ultra (AOSP)
+PRODUCT_MODEL := Xperia T2 Ultra
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
+
+$(call inherit-product, device/sony/tianchi/device.mk)
+$(call inherit-product-if-exists, vendor/sony/tianchi/tianchi-vendor.mk)
+
+# Missing:
+#
+# Fingerprint for tianchi (from stock)
+# Bootanimation
