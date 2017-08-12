@@ -18,6 +18,6 @@ Battery | 3000  mAh
 Display | 6" 1280 x 720 px
 Camera  | 12.8MPx, LED Flash
 
-![Sony Xperia T2 Ultra](http://img.xda-cdn.com/osG6FuKlzI6n69ZDOKPSl_1QfhM=/300x300/smart/forum.xda-developers.com/devdb/deviceForum/screenshots/3289/20140702T050230.jpgg "Sony Xperia T2 Ultra in black")
+![Sony Xperia T2 Ultra](http://img.xda-cdn.com/osG6FuKlzI6n69ZDOKPSl_1QfhM=/300x300/smart/forum.xda-developers.com/devdb/deviceForum/screenshots/3289/20140702T050230.jpg "Sony Xperia T2 Ultra in black")
 
 This branch is for building LineageOS 14.1 (or Android Nougat 7.1 AOSP based) ROMS.
