@@ -5,7 +5,7 @@ The Sony Xperia T2 Ultra (codenamed _"tianchi"_) is a mid-range smartphone from 
 
 It was announced on May 2014.
 
-Flamingo was supported in CyanogenMod 11, 12, 12.1 and now by LineageOS 14.1
+Tianchi was supported in CyanogenMod 11, 12, 12.1 and now by LineageOS 14.1
 
 Basic   | Spec Sheet
 -------:|:-------------------------
