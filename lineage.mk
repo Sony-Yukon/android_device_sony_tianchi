@@ -23,9 +23,6 @@ TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5303,tianchi
 
-# Inherit from common resources
-$(call inherit-product, device/sony/common/resources.mk)
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/tianchi/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
@@ -36,8 +33,8 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Fingerprint for tianchi (from stock)
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D5303
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/D5303/D5303:4.4.3/19.1.1.C.0.56/x393Zw:user/release-key
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="D5303-user 4.4.3 19.1.1.C.0.56 x393Zw release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/D5303/D5303:5.1.1/19.4.A.0.182/2188515266:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="D5303-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys"
 
 # Override Product Name for LineageOS
 PRODUCT_NAME		:= lineage_tianchi
